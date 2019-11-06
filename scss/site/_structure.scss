@@ -1,0 +1,75 @@
+
+.apff .page-content {
+	text-align: center;
+
+	header { 
+	  width: 100%;
+	  clear: both;
+	  background-color: white;
+	  position: relative;
+	}
+
+	h1, h2, h3, h4 {
+		color: $brandPrimary;
+	}
+
+	h1 {
+		font-size: $h1-font-size;
+		font-weight: 600;
+		margin: 40px 0 20px 0;
+		line-height: $h1-line-height;
+	}
+
+	p {
+		color: $textColor;
+		line-height: 30px;
+		margin-top: 20px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.container {
+		max-width: $content-max-width;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.btn {
+		background: $brandPrimary;
+		border-radius: 20px;
+		color: $white;
+		display: inline-block;
+		font-weight: 600;
+		padding: 12px 26px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all .3s ease-out;
+
+		.fa {
+			margin-left: 5px;
+		}
+
+		&:hover {
+			background: $black;
+			color: $white;
+		}
+
+		&.black {
+			background: $black;
+
+			.fa {
+				color: $brandPrimary;
+			}
+
+			&:hover {
+				background: $brandPrimary;
+
+				.fa {
+					color: $white;
+				}
+			}
+		}
+	}
+}

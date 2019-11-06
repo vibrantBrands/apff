@@ -1,0 +1,34 @@
+// Fonts
+$baseFont: 'Open Sans', sans-serif;
+$secondaryFont: 'Cormorant Upright', serif;
+$font-stack-system: 'Open Sans', sans-serif;
+
+// Font sizes
+$h1-font-size: 40px;
+$h1-line-height: 40px;
+
+// Colors
+$black: black;
+$white: white;
+$brandPrimary: #3f7492; // Light Blue
+$textColor: #a6a6a6;
+$sponsorBg: #f2f2f2;
+
+// Breakpoints
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+// Text Selection
+$selectionColor: $brandPrimary;
+$selectionTextColor: #fff;
+
+// Links
+$linkColor: $brandPrimary;
+
+// Content width
+$content-max-width: 1200px;
+$paragraph-line-height: 1.5em;
+$menu-transition: .3s all ease-out;
+
