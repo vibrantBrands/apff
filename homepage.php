@@ -57,11 +57,22 @@
 	</section>
 
 	<section class="upcoming-events">
-		<h1><i class="fa fa-calendar-alt"></i>UPCOMING APFF EVENTS</h1>
-		<?php
-			$a = new Area("Upcoming Events");
-			$a->display();
-		?>
+		<div class="container">
+			<h1><i class="fa fa-calendar-alt"></i>UPCOMING APFF EVENTS</h1>
+			<?php
+				$a = new Area("Upcoming Events");
+				$a->display();
+			?>
+			<div class="link-wrapper">
+				<a href="/events">See more events...</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="social">
+		<div class="container">
+			<h1><i class="fa fa-comments"></i>LET'S GET SOCIAL</h1>
+		</div>
 	</section>
 
 </div>

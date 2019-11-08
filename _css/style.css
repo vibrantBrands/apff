@@ -4284,7 +4284,7 @@ header {
 .home_wrapper .hero {
   background: url("../img/header-image.png");
   background-size: cover;
-  background-position: center;
+  background-position: center -160px;
   color: white;
   height: 500px;
   padding-top: 150px;
@@ -4295,6 +4295,9 @@ header {
     .home_wrapper .hero {
       padding-top: 120px;
       background-position: center -80px; } }
+  @media only screen and (max-width: 992px) {
+    .home_wrapper .hero {
+      background-position: center -60px; } }
   .home_wrapper .hero .hero-text p {
     color: white;
     font-size: 3.3em;
@@ -4386,8 +4389,36 @@ header {
     .home_wrapper .board-of-directors ul li {
       margin-bottom: 8px; }
 
-.home_wrapper .upcoming-events .ccm-block-calendar-event-list {
-  display: flex; }
+.home_wrapper .upcoming-events h1 {
+  margin-bottom: 40px; }
+
+.home_wrapper .upcoming-events .fa-calendar-alt {
+  margin-right: 10px; }
+
+.home_wrapper .upcoming-events .link-wrapper {
+  color: #3f7492;
+  display: block;
+  margin: 30px auto;
+  text-align: center; }
+  .home_wrapper .upcoming-events .link-wrapper a {
+    display: inline-block;
+    margin: 0 auto; }
+
+.home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+  .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-page-entry-horizontal {
+    width: 45%; }
+  .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-page-entry-text {
+    padding-top: 10px; }
+  .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-title a {
+    color: black;
+    text-transform: uppercase; }
+  .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-description {
+    color: #a6a6a6;
+    line-height: 20px;
+    margin-top: 10px; }
 
 /* ==========================================================================
    Print styles.

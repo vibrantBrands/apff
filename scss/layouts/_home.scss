@@ -3,7 +3,7 @@
 	.hero {
 		background: url('../img/header-image.png');
 		background-size: cover;
-		background-position: center;
+		background-position: center -160px;
 		color: $white;
 		height: 500px;
 		padding-top: 150px;
@@ -14,6 +14,10 @@
 		@media only screen and (max-width: $md-breakpoint) {
 			padding-top: 120px;
 			background-position: center -80px;
+		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			background-position: center -60px;
 		}
 
 		.hero-text {
@@ -143,11 +147,54 @@
 
 	.upcoming-events {
 
-		.ccm-block-calendar-event-list {
-			display: flex;
+		h1 {
+			margin-bottom: 40px;
+		}
 
-			.ccm-block-calendar-event-list-event {
+		.fa-calendar-alt {
+			margin-right: 10px;
+		}
 
+		.link-wrapper {
+			color: $brandPrimary;
+			display: block;
+			margin: 30px auto;
+			text-align: center;
+
+			a {
+				display: inline-block;
+				margin: 0 auto;
+			}
+		}
+
+		.ccm-block-page-list-wrapper {
+
+			.ccm-block-page-list-pages {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+
+				.ccm-block-page-list-page-entry-horizontal {
+					width: 45%;
+				}
+
+				.ccm-block-page-list-page-entry-text {
+					padding-top: 10px;
+				}
+
+				.ccm-block-page-list-title {
+
+					a {
+						color: $black;
+						text-transform: uppercase;
+					}
+				}
+
+				.ccm-block-page-list-description {
+					color: $textColor;
+					line-height: 20px;
+					margin-top: 10px;
+				}
 			}
 		}
 	}
