@@ -1,41 +1,34 @@
 <?php require('elements/header.php'); ?>
 
-<div class="page-header">
-    <?php
+<div class="page-content">
+
+	<?php
        $page = Page::getCurrentPage();
 
            if($image = $c->getAttribute('header_image')):
                $image = $c->getAttribute('header_image');
                $image_src = $image->getRelativePath();
        ?>
-           <img src='<?php echo $image_src; ?>'>
+        
+        <section class="hero" style="background:url('<?php echo $image_src; ?>');background-size:cover;">
            
        <?php else: ?>
-           <img src='<?php echo $this->getThemePath() ?>/img/placeholder.jpg' alt='Rhythm Management Group'>
-           
+           <section class="hero">  
        <?php endif; ?>
-       
-</div>
 
-<section class="internal_content_wrapper">
-  <div class="internal_content_container content">
-    <?php
-      $a = new Area("Internal Content"); 
-      $a->display($c);
-    ?>
-  </div>
-	<div class="sidebar_container">
-		<?php
-            $bt = BlockType::getByHandle('autonav');
-            $bt->controller->displayPages = 'top'; // 'top', 'above', 'below', 'second_level', 'third_level', 'custom', 'current'
-            $bt->controller->displayPagesCID = ''; // if display pages is set �쁟ustom��
-            $bt->controller->orderBy = 'display_asc';  // 'chrono_desc', 'chrono_asc', 'alpha_asc', 'alpha_desc', 'display_desc','display_asc'
-            $bt->controller->displaySubPages = 'all';  //none', 'all, 'relevant_breadcrumb', 'relevant'
-            $bt->controller->displaySubPageLevels = 'all'; // 'enough', 'enough_plus1', 'all', 'custom'
-            $bt->controller->displaySubPageLevelsNum = ''; // if displaySubPages is set 'custom'
-            $bt->render('templates/sidebar_nav'); // for template 'templates/template_name';
-        ?>
-	</div>
-</section>
+		<div class="hero-text">
+			<p>Bridging the Gap</p>
+			<p><span>Supporting our Albany Heroes</span></p>
+		</div>
+		<a class="btn" href="/">Learn More<i class="fa fa-chevron-right"></i></a>
+		<div class="support-text"><span>YOU CAN BE A HERO TO OUR HEROES</span> SUPPORT THE FOUNDATION<a class="btn" href="/">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
+	</section>
+
+	<?php
+		$a = new Area("Sponsor Logos");
+		$a->display();
+	?>
+
+</div>
 
 <?php require('elements/footer.php'); ?>

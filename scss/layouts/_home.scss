@@ -1,65 +1,8 @@
 .home_wrapper {
 
-	.hero {
-		background: url('../img/header-image.png');
-		background-size: cover;
-		background-position: center -160px;
-		color: $white;
-		height: 500px;
-		padding-top: 150px;
-		position: relative;
-		text-align: center;
-		width: 100%;
-
-		@media only screen and (max-width: $md-breakpoint) {
-			padding-top: 120px;
-			background-position: center -80px;
+		h1 {
+			margin: 40px 0;
 		}
-
-		@media only screen and (max-width: $lg-breakpoint) {
-			background-position: center -60px;
-		}
-
-		.hero-text {
-			p {
-				color: $white;
-				font-size: 3.3em;
-				line-height: 1em;
-				margin: 0;
-
-				span {
-					font-weight: 800;
-				}
-			}
-		}
-
-		.btn {
-			margin-top: 50px;
-		}
-
-		.support-text {
-			align-items: center;
-			background: rgba(0, 0, 0, .5);
-			bottom: 0;
-			display: flex;
-			font-weight: 700;
-			height: 80px;
-			justify-content: center;
-			letter-spacing: 1px;
-			position: absolute;
-			width: 100%;
-
-			span {
-				border-right: 1px solid $brandPrimary;
-				margin-right: 10px;
-				padding-right: 10px;
-			}
-
-			.btn {
-				margin: 0 0 0 10px;
-			}
-		}
-	}
 
 	.sponsors {
 		background: $sponsorBg;
@@ -130,7 +73,7 @@
 		outline: 5px solid $brandPrimary;
   		outline-offset: 5px;
 
-  		h1 {
+  		h2 {
   			color: $white;
   			margin-top: 10px;
   		}
@@ -146,10 +89,7 @@
 	}
 
 	.upcoming-events {
-
-		h1 {
-			margin-bottom: 40px;
-		}
+		padding: $homepage-section-padding;
 
 		.fa-calendar-alt {
 			margin-right: 10px;
@@ -175,6 +115,7 @@
 				justify-content: space-between;
 
 				.ccm-block-page-list-page-entry-horizontal {
+					padding: 0 30px;
 					width: 45%;
 				}
 
@@ -196,6 +137,15 @@
 					margin-top: 10px;
 				}
 			}
+		}
+	}
+
+	.social {
+		background: #f2f1f1;
+		padding: $homepage-section-padding;
+
+		a {
+			color: $white;
 		}
 	}
 }

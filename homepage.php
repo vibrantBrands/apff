@@ -1,4 +1,5 @@
 <?php require('elements/header.php'); ?>
+
 <div class="page-content">
 	<section class="hero">
 		<div class="hero-text">
@@ -25,7 +26,7 @@
 	<section class="mission-statement">
 		<div class="container">
 			<div>
-				<h1>APFF MISSION</h1>
+				<h2>APFF MISSION</h2>
 				<p>The Albany Police and Fire Foundation is dedicated to strengthening the Albany Police and Fire Departments by promoting public safety throughout the city. The Foundation generates support for innovative and creative programs and equipment to continuously improve the technical effectiveness and professionalism of the departments and promote greater understanding between the community at large and Albany Police and Fire Departments.</p>
 
 				<p>The Albany Police & Fire Foundation is a registered 501c3.<br /><a href="/">Learn more...</a></p>
@@ -58,7 +59,7 @@
 
 	<section class="upcoming-events">
 		<div class="container">
-			<h1><i class="fa fa-calendar-alt"></i>UPCOMING APFF EVENTS</h1>
+			<h2><i class="fa fa-calendar-alt"></i>UPCOMING APFF EVENTS</h2>
 			<?php
 				$a = new Area("Upcoming Events");
 				$a->display();
@@ -71,7 +72,8 @@
 
 	<section class="social">
 		<div class="container">
-			<h1><i class="fa fa-comments"></i>LET'S GET SOCIAL</h1>
+			<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falbanynypoliceandfirefoundation%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 		</div>
 	</section>
 

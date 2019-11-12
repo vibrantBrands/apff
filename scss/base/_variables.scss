@@ -4,13 +4,13 @@ $secondaryFont: 'Cormorant Upright', serif;
 $font-stack-system: 'Open Sans', sans-serif;
 
 // Font sizes
-$h1-font-size: 40px;
-$h1-line-height: 40px;
+$h2-font-size: 40px;
+$h2-line-height: 40px;
 
 // Colors
 $black: black;
 $white: white;
-$brandPrimary: #3f7492; // Light Blue
+$brandPrimary: #5890b0; // Light Blue
 $textColor: #a6a6a6;
 $sponsorBg: #f2f2f2;
 
@@ -31,4 +31,5 @@ $linkColor: $brandPrimary;
 $content-max-width: 1200px;
 $paragraph-line-height: 1.5em;
 $menu-transition: .3s all ease-out;
+$homepage-section-padding: 20px 30px;
 

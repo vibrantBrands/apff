@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath(); ?>/_css/style.css">
+
     <?php
     View::element('header_required', [
         'pageTitle' => isset($pageTitle) ? $pageTitle : '',
@@ -29,7 +33,7 @@
         }
     </script>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath(); ?>/_css/style.css">
+    
 </head>
 <body class='apff <?php if ($po->isHome()) { echo "home_wrapper"; } else {echo "internal_wrapper"; }  ?>'>
 
