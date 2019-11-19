@@ -25,7 +25,7 @@
 	</section>
 
 	<?php
-		$a = new Area("Sponsor Logos");
+		$a = new Area("Main Page Content");
 		$a->display();
 	?>
 

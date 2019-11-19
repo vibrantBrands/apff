@@ -32,7 +32,6 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
       <div class="logo">
         <a href="/"><img src="<?php echo $this->getThemePath(); ?>/img/logo.png" alt="APFF Logo"></a>
       </div>
-      <div>
         <?php   
                     $bt = BlockType::getByHandle('autonav');
                     $bt->controller->displayPages = 'top'; // 'top', 'above', 'below', 'second_level', 'third_level', 'custom', 'current'
@@ -44,6 +43,5 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
                     $bt->render('templates/main_nav'); // for template 'templates/template_name';
                     ?>
             <a class="btn black" href="/donate">Donate<i class="fa fa-chevron-right"></i></a>
-        </div>
     </div>
   </header>

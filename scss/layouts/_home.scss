@@ -114,9 +114,16 @@
 				display: flex;
 				justify-content: space-between;
 
+				@include flex-col-layout();
+
 				.ccm-block-page-list-page-entry-horizontal {
+					margin-top: 30px;
 					padding: 0 30px;
 					width: 45%;
+
+					@media only screen and (max-width: $lg-breakpoint) {
+			            width: 100%;
+			        }
 				}
 
 				.ccm-block-page-list-page-entry-text {

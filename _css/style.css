@@ -1015,7 +1015,7 @@ textarea {
       margin: 0 auto;
       text-align: left; }
   .apff .hero {
-    background: url("../img/header-image.png");
+    background: url("../img/header-image.png") no-repeat;
     background-size: cover;
     background-position: center -160px;
     color: white;
@@ -1104,6 +1104,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 3; }
+    header .navigation .btn {
+      display: flex; }
     header .navigation .logo {
       width: 230px; }
       @media only screen and (max-width: 768px) {
@@ -1112,7 +1114,8 @@ header {
           align-self: center; } }
     @media only screen and (max-width: 768px) {
       header .navigation {
-        justify-content: space-around; } }
+        justify-content: space-around;
+        padding: 20px 0; } }
     header .navigation > div {
       display: flex; }
     header .navigation .toggle-wrapper {
@@ -1129,7 +1132,7 @@ header {
       header .navigation .toggle-wrapper p {
         color: black;
         font-size: 0.6em;
-        margin: 20px 0 0 -1px; }
+        margin: 30px 0 0 -1px; }
     header .navigation .menu-toggle {
       cursor: pointer; }
       header .navigation .menu-toggle .bg {
@@ -1178,6 +1181,7 @@ header {
       font-weight: 700;
       justify-content: flex-end;
       text-align: right;
+      width: 100%;
       z-index: 10; }
       @media screen and (max-width: 1200px) {
         header .navigation .nav {
@@ -1358,9 +1362,16 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 992px) {
+      .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages {
+        flex-direction: column; } }
     .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-page-entry-horizontal {
+      margin-top: 30px;
       padding: 0 30px;
       width: 45%; }
+      @media only screen and (max-width: 992px) {
+        .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-page-entry-horizontal {
+          width: 100%; } }
     .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-page-entry-text {
       padding-top: 10px; }
     .home_wrapper .upcoming-events .ccm-block-page-list-wrapper .ccm-block-page-list-pages .ccm-block-page-list-title a {
@@ -1378,12 +1389,47 @@ header {
     color: white; }
 
 .internal_wrapper .page-content .hero {
+  padding-top: 80px;
   text-align: left; }
   .internal_wrapper .page-content .hero .hero-text {
     padding-left: 5%;
     width: 50%; }
+    @media only screen and (max-width: 768px) {
+      .internal_wrapper .page-content .hero .hero-text {
+        width: 100%; } }
   .internal_wrapper .page-content .hero .btn {
     margin-left: 5%; }
+
+.internal_wrapper .mission {
+  background: url("../img/mission-bg.png") no-repeat; }
+  .internal_wrapper .mission h2, .internal_wrapper .mission p {
+    color: white; }
+
+.internal_wrapper .our-team .container .staff-photos {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .internal_wrapper .our-team .container .staff-photos {
+      flex-direction: column; } }
+  .internal_wrapper .our-team .container .staff-photos .staff-member {
+    margin: 20px 30px;
+    text-align: center;
+    width: 25%; }
+    @media only screen and (max-width: 768px) {
+      .internal_wrapper .our-team .container .staff-photos .staff-member {
+        width: 90%; } }
+    .internal_wrapper .our-team .container .staff-photos .staff-member h3 {
+      text-transform: capitalize;
+      margin: 20px 0 0; }
+    .internal_wrapper .our-team .container .staff-photos .staff-member p {
+      margin-top: 5px; }
+
+.internal_wrapper .gray-bar {
+  background: #f2f2f2;
+  height: 60px;
+  margin-top: 20px;
+  width: 100%; }
 
 footer {
   background: url("../img/footer-bg.png") no-repeat;

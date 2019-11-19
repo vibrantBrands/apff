@@ -4,16 +4,69 @@
 	.page-content {
 
 		.hero {
+			padding-top: 80px;
 			text-align: left;
 
 			.hero-text {
 				padding-left: 5%;
 				width: 50%;
+
+				@media only screen and (max-width: $md-breakpoint) {
+			        width: 100%;
+			    }
 			}
 
 			.btn {
 				margin-left: 5%;
 			}
 		}
+	}
+
+	.mission {
+		background: url('../img/mission-bg.png') no-repeat;
+
+		h2, p {
+			color: $white;
+		}
+	}
+
+	.our-team {
+
+		.container {
+
+			.staff-photos {
+				display: flex;
+				margin-top: 40px;
+				flex-wrap: wrap;
+
+				@include flex-col-layout($md-breakpoint);
+
+				.staff-member {
+					margin: 20px 30px;
+					text-align: center;
+					width: 25%;
+
+					@media only screen and (max-width: $md-breakpoint) {
+			            width: 90%;
+			        }
+
+					h3 {
+						text-transform: capitalize;
+						margin: 20px 0 0;
+					}
+
+					p {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.gray-bar {
+		background: $sponsorBg;
+		height: 60px;
+		margin-top: 20px;
+		width: 100%
 	}
 }
