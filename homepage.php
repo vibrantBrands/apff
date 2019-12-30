@@ -6,8 +6,12 @@
 			<p>Bridging the Gap</p>
 			<p><span>Supporting our Albany Heroes</span></p>
 		</div>
-		<a class="btn" href="/">Learn More<i class="fa fa-chevron-right"></i></a>
-		<div class="support-text"><span>YOU CAN BE A HERO TO OUR HEROES</span> SUPPORT THE FOUNDATION<a class="btn" href="/">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
+		<a class="btn" href="/about">Learn More<i class="fa fa-chevron-right"></i></a>
+		<div class="support-text">
+			<div><span>YOU CAN BE A HERO TO OUR HEROES</span></div>
+			<div>SUPPORT THE FOUNDATION</div>
+			<div><a class="btn" href="/donate">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
+		</div>
 	</section>
 
 	
@@ -72,9 +76,18 @@
 
 	<section class="social">
 		<div class="container">
-			<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
-			<!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falbanynypoliceandfirefoundation%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>  -->
+			<div>
+				<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falbanynypoliceandfirefoundation%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="310" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+			<div>
+				<?php
+					$a = new Area("Image");
+					$a->display();
+				?>
+			</div>
 		</div>
+			
 	</section>
 
 </div>

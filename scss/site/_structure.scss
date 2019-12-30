@@ -15,7 +15,7 @@
     }
 
     &:hover {
-        background: $black;
+        background: $btnHover;
         color: $white;
     }
 
@@ -37,7 +37,10 @@
 }
 
 .apff {
-	text-align: center;
+
+    @media only screen and (max-width: $md-breakpoint) {
+        overflow-x: hidden;
+    }
 
     header {
         width: 100%;
@@ -57,7 +60,7 @@
     .container {
     	margin: 0 auto;
     	max-width: $content-max-width;
-        padding: 5%;
+        padding: 20px 5% 50px;
     }
 
     .page-content {
@@ -122,9 +125,13 @@
         .hero-text {
             p {
                 color: $white;
-                font-size: 3.3em;
+                font-size: 3.1em;
                 line-height: 1em;
                 margin: 0;
+
+                 @media only screen and (max-width: $xl-breakpoint) {
+                    font-size: 2em;
+                }
 
                 span {
                     font-weight: 800;
@@ -142,11 +149,24 @@
             bottom: 0;
             display: flex;
             font-weight: 700;
-            height: 80px;
+            height: auto;
             justify-content: center;
             letter-spacing: 1px;
+            padding: 20px 0;
             position: absolute;
             width: 100%;
+
+            @include flex-col-layout();
+
+            @media only screen and (max-width: $lg-breakpoint) {
+                background: $black;
+            } 
+
+            >div {
+               @media only screen and (max-width: $lg-breakpoint) {
+                    margin-top: 20px;
+                } 
+            }
 
             span {
                 border-right: 1px solid $brandPrimary;
@@ -156,6 +176,10 @@
 
             .btn {
                 margin: 0 0 0 10px;
+
+                @media only screen and (max-width: $md-breakpoint) {
+                    margin-top: 20px;
+                } 
             }
         }
     }

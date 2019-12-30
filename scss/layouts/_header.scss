@@ -14,11 +14,14 @@ header {
 		height: 50px;
 		justify-content: flex-end;
 		padding-right: 20px;
+		z-index: 3;
 
 		@media only screen and (max-width: $md-breakpoint) {
+			align-items: flex-end;
 			flex-direction: column-reverse;
 			height: 50px;
-			justify-content: space-around;
+			position: fixed;
+			width: 100%;
 		}
 
 		.fa {
@@ -75,7 +78,7 @@ header {
 
 		@media only screen and (max-width: $md-breakpoint) {
 			justify-content: space-around;
-			padding: 20px 0;
+			padding-top: 80px;
 		}
 
 		>div {
@@ -83,20 +86,23 @@ header {
 		}
 
 		.toggle-wrapper {
+			cursor: pointer;
 			display: flex;
 			flex-direction: column;
-			width: 30px;
 			height: 26px;
-			position: relative;
 			margin: -12px 0 0 20px;
+			left: 0px;
+			position: fixed;
+			top: 16px;
+			width: 30px;
 			z-index: 5;
 
 			@media only screen and (min-width: $md-breakpoint) {
 				display: none;
-			}	
+			}
 
 			p {
-				color: $black;
+				color: white;
 				font-size: 0.6em;
 				margin: 30px 0 0 -1px;
 			}
@@ -114,7 +120,7 @@ header {
 			}
 
 			.bar {
-				background: $black;
+				background: white;
 				display: block;
 				height: 2px;
 				position: absolute;
@@ -132,7 +138,6 @@ header {
 			&.active {
 
 				.bar {
-					//background: $white;
 					transition: $menu-transition;
 					
 					&:first-child {
@@ -193,7 +198,7 @@ header {
                 font-size: 16px;
                 min-height: 1000px;
                 position: fixed;
-                top: 176px;
+                top: 50px;
                 width: 100%;
             }
 
@@ -207,7 +212,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
-                padding: 0 10px;
+                padding: 0 20px;
                 text-align: left;
                 text-decoration: none;
 
@@ -316,7 +321,7 @@ header {
                     }
 
                     &:hover {
-                        background: blue;
+                        background: $brandPrimary;
                     }
                 }
             }

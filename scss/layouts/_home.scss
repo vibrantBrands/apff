@@ -21,7 +21,7 @@
 				position: absolute;
 				margin: 7px auto;
 				height: 1px;
-				width: 100%;
+				width: 90%;
 				z-index: 0;
 			}
 		}
@@ -40,12 +40,15 @@
 			display: flex;
 
 			p {
+				align-items: center;
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
+				margin-top: 20px;
+
+				@include flex-col-layout;
 
 				picture {
-					margin: 0 15px;
+					margin: 15px;
 				}
 			}
 		}
@@ -69,7 +72,7 @@
 	}
 
 	.board-of-directors {
-		background: url('../img/directors-bg.png');
+		background: url('../img/directors-bg.jpg');
 		outline: 5px solid $brandPrimary;
   		outline-offset: 5px;
 
@@ -81,6 +84,10 @@
   		ul {
   			color: $white;
   			column-count: 3;
+
+  			@media only screen and (max-width: $md-breakpoint) {
+			    column-count: 1;
+			}
 
   			li {
   				margin-bottom: 8px;
@@ -150,6 +157,22 @@
 	.social {
 		background: #f2f1f1;
 		padding: $homepage-section-padding;
+
+		.container {
+			@include flex-col-layout();
+
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+
+			img {
+				width: 400px;
+			}
+		}
+
+		@media only screen and (max-width: $md-breakpoint) {
+			padding: 40px 0px;
+		}
 
 		a {
 			color: $white;

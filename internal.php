@@ -20,15 +20,16 @@
 			<p>Bridging the Gap</p>
 			<p><span>Supporting our Albany Heroes</span></p>
 		</div>
-		<a class="btn" href="/">Learn More<i class="fa fa-chevron-right"></i></a>
-		<div class="support-text"><span>YOU CAN BE A HERO TO OUR HEROES</span> SUPPORT THE FOUNDATION<a class="btn" href="/">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
+		<a class="btn" href="/about">Learn More<i class="fa fa-chevron-right"></i></a>
+		<div class="support-text"><span>YOU CAN BE A HERO TO OUR HEROES</span> SUPPORT THE FOUNDATION<a class="btn" href="/donate">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
 	</section>
 
+	<div class="container">
 	<?php
 		$a = new Area("Main Page Content");
 		$a->display();
 	?>
-
+	</div>
 </div>
 
 <?php require('elements/footer.php'); ?>
