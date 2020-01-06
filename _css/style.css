@@ -1021,7 +1021,7 @@ textarea {
     text-align: left; }
 
 .apff .hero {
-  background: url("../img/header-image.png") no-repeat;
+  background: url("../img/APFF_hero-img.png") no-repeat;
   background-size: cover;
   background-position: center -160px;
   color: white;
@@ -1041,6 +1041,7 @@ textarea {
     color: white;
     font-size: 3.1em;
     line-height: 1em;
+    text-shadow: 2px 2px 4px #000000;
     margin: 0; }
     @media only screen and (max-width: 1200px) {
       .apff .hero .hero-text p {
