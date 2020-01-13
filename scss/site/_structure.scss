@@ -123,6 +123,7 @@
         }
 
         .hero-text {
+
             p {
                 color: $white;
                 font-size: 3.1em;
@@ -130,7 +131,7 @@
                 text-shadow: 2px 2px 4px #000000;
                 margin: 0;
 
-                 @media only screen and (max-width: $xl-breakpoint) {
+                @media only screen and (max-width: $lg-breakpoint) {
                     font-size: 2em;
                 }
 

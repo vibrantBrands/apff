@@ -8,9 +8,8 @@
 		</div>
 		<a class="btn" href="/about">Learn More<i class="fa fa-chevron-right"></i></a>
 		<div class="support-text">
-			<div><span>YOU CAN BE A HERO TO OUR HEROES</span></div>
-			<div>SUPPORT THE FOUNDATION</div>
-			<div><a class="btn" href="/donate">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
+			<div>SUPPORT APFF</div>
+			<div><a class="btn" href="/donate">DONATE<i class="fa fa-chevron-right"></i></a></div>
 		</div>
 	</section>
 
@@ -63,7 +62,7 @@
 
 	<section class="upcoming-events">
 		<div class="container">
-			<h2><i class="fa fa-calendar-alt"></i>UPCOMING APFF EVENTS</h2>
+			<h2><i class="fa fa-calendar-alt"></i>EVENTS</h2>
 			<?php
 				$a = new Area("Upcoming Events");
 				$a->display();

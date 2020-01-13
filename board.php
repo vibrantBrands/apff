@@ -21,7 +21,7 @@
 			<p><span>Supporting our Albany Heroes</span></p>
 		</div>
 		<a class="btn" href="/">Learn More<i class="fa fa-chevron-right"></i></a>
-		<div class="support-text"><span>YOU CAN BE A HERO TO OUR HEROES</span> SUPPORT THE FOUNDATION<a class="btn" href="/">SUPPORT ALBANY<i class="fa fa-chevron-right"></i></a></div>
+		<div class="support-text">SUPPORT APFF<a class="btn" href="/donate">DONATE<i class="fa fa-chevron-right"></i></a></div>
 	</section>
 
 	<?php

@@ -1,8 +1,13 @@
 
 .internal_wrapper {
 
-	.container {
-		
+	.hero-text {
+		max-width: 600px;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			max-width: 370px;
+        }
+
 	}
 
 	.page-content {
@@ -22,6 +27,13 @@
 
 			.btn {
 				margin-left: 5%;
+			}
+
+			.support-text {
+
+				.btn {
+					margin-left: 0;
+				}
 			}
 		}
 	}

@@ -13,7 +13,6 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
         CONTACT APFF TODAY! 
       </div>
       <div>
-        <i class="fa fa-phone"></i><a href="tel:8454348300">555-1234 OR</a>
         <i class="fa fa-envelope"></i>
       </div>
     </div>

@@ -1043,7 +1043,7 @@ textarea {
     line-height: 1em;
     text-shadow: 2px 2px 4px #000000;
     margin: 0; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 992px) {
       .apff .hero .hero-text p {
         font-size: 2em; } }
     .apff .hero .hero-text p span {
@@ -1437,6 +1437,12 @@ header {
       padding: 40px 0px; } }
   .home_wrapper .social a {
     color: white; }
+
+.internal_wrapper .hero-text {
+  max-width: 600px; }
+  @media only screen and (max-width: 992px) {
+    .internal_wrapper .hero-text {
+      max-width: 370px; } }
 
 .internal_wrapper .page-content .hero {
   padding-top: 80px;
