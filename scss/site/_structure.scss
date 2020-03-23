@@ -83,7 +83,7 @@
 
         p {
             color: $textColor;
-            line-height: 30px;
+            line-height: $text-line-height;
             margin-top: 20px;
         }
 
@@ -91,10 +91,24 @@
             text-decoration: none;
         }
 
+        ul {
+            color: $textColor;
+            line-height: 25px;
+            padding-left: 30px;
+            list-style-type: disc;
+        }
+
         .container {
             max-width: $content-max-width;
             margin: 0 auto;
             text-align: left;
+
+            .list-wrapper {
+                
+                .list {
+                    display: flex;
+                }
+            }
         }
 
         .btn {
@@ -126,8 +140,8 @@
 
             p {
                 color: $white;
-                font-size: 3.1em;
-                line-height: 1em;
+                font-size: 2.8em;
+                line-height: 1.2em;
                 text-shadow: 2px 2px 4px #000000;
                 margin: 0;
 

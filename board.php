@@ -16,11 +16,9 @@
            <section class="hero">  
        <?php endif; ?>
 
-		<div class="hero-text">
-			<p>Bridging the Gap</p>
-			<p><span>Supporting our Albany Heroes</span></p>
-		</div>
-		<a class="btn" href="/">Learn More<i class="fa fa-chevron-right"></i></a>
+		<!-- <div class="hero-text">
+			<p>Our Board of Directors</p>
+		</div> -->
 		<div class="support-text">SUPPORT APFF<a class="btn" href="/donate">DONATE<i class="fa fa-chevron-right"></i></a></div>
 	</section>
 
@@ -31,39 +29,11 @@
 	
 	<section class="our-team">
 		<div class="container">
-		  <h2>Our Board of Directors</h2>
-
-		 	<div class="staff-photos">
-		 		<?php
-				  $fs = FileSet::getByName('Staff Photos');
-				  $fl = new FileList();
-				  $fl->filterBySet($fs);
-				  $fl->sortBy('fsDisplayOrder', 'asc');
-				  $files = $fl->get();
-				 
-				  foreach($files as $f) {
-				    $downloadpath = $f->getDownloadURL();
-				    $imagepath = $f->getRelativePath();
-				    $title = $f->getTitle();
-				    $description = $f->getDescription(); ?>
-				    
-				    <div class='staff-member'>
-						<img src='<?php echo $imagepath; ?>' class="regular_image" />
-				         <div class="info">
-				            <h3><?php echo $title; ?></h3>
-				            <p><a href="">Read bio...</a></p>
-				          </div>
-				      </div>
-
-				  
-				  <?php }
-				?>
-		 	</div>
-		</div>
-		<div class="blue-bar">
-		 	<img src="<?php echo $this->getThemePath(); ?>/img/blue-band-bg.jpg" alt="Blue Bar"></a>
-		</div>
-		<div class="gray-bar">
+			<h2>Board & Staff</h2>
+			<?php
+				$a = new Area("Staff Photos");
+				$a->display();
+			?>
 		</div>
 	</section>
 </div>

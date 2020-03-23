@@ -5,6 +5,15 @@ footer {
 	text-align: left;
 	padding: 50px 0;
 
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			color: #ffcc00;
+		}
+	}
+
 	.container {
 		color: $white;
 		display: flex;
@@ -16,6 +25,15 @@ footer {
 			margin-top: 30px;
 			display: flex;
 			flex-direction: column;
+			width: 33%;
+
+			&:first-child {
+				width: 20%;
+
+				@include mobile-full-width();
+			}
+
+			@include mobile-full-width();
 		}
 
 		@include flex-col-layout();
@@ -25,11 +43,12 @@ footer {
 			text-transform: uppercase;
 			font-size: 1.3em;
 			font-weight: 700;
+			margin: 20px 0 0;
 		}
 
 		p {
 			margin-bottom: 5px;
-			line-height: 1.1em;
+			line-height: 1.2em;
 		}
 
 		input {

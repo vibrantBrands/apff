@@ -1,0 +1,18 @@
+.wufoo .info {
+   display: none;
+}
+
+html.embed {
+	background: 0;
+}
+
+.confirm .wufoo {
+	text-align: left;
+}
+
+.confirm .h2 {
+	font-size: 14px;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
