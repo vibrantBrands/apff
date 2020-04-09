@@ -1459,6 +1459,8 @@ header {
   @media only screen and (max-width: 768px) {
     .home_wrapper .social {
       padding: 40px 0px; } }
+  .home_wrapper .social h2 {
+    text-align: left; }
   .home_wrapper .social a {
     color: white; }
 

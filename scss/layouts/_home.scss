@@ -147,6 +147,11 @@
 	.upcoming-events {
 		padding: $homepage-section-padding;
 
+		.event-photos {
+			display flex;
+			justify-content: space-between;
+		}
+
 		.link-wrapper {
 		 	margin-top: 40px;
 		 }
@@ -201,6 +206,10 @@
 
 		@media only screen and (max-width: $md-breakpoint) {
 			padding: 40px 0px;
+		}
+
+		h2 {
+			text-align: left;
 		}
 
 		a {

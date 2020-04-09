@@ -10,10 +10,10 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
   <header>
     <div class="topbar">
       <div>
-        CONTACT APFF TODAY! 
+        <a href="/contact">CONTACT APFF TODAY!</a> 
       </div>
       <div>
-        <i class="fa fa-envelope"></i>
+        <a href="/contact"><i class="fa fa-envelope"></i></a>
       </div>
     </div>
     <div class="navigation">

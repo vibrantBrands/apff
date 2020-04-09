@@ -4,7 +4,7 @@
 	<section class="hero">
 		<div class="hero-text">
 			<p>Bridging the Gap</p>
-			<p><span>Supporting Albany City's Police and Fire</span></p>
+			<p><span>Supporting Albany's Police Officers and Firefighters</span></p>
 		</div>
 		<a class="btn" href="/about">Learn More<i class="fa fa-chevron-right"></i></a>
 		<div class="support-text">
@@ -81,10 +81,26 @@
 	<section class="upcoming-events">
 		<div class="container">
 			<h2><i class="fa fa-calendar-alt"></i>NEWS & EVENTS</h2>
-			<?php
-				$a = new Area("Upcoming Events");
-				$a->display();
-			?>
+			<div class="event-photos">
+				<div>
+					<?php
+						$a = new Area("Event Photo 1");
+						$a->display();
+			    	?>
+				</div>
+				<div>
+					<?php
+						$a = new Area("Event Photo 2");
+						$a->display();
+			    	?>
+				</div>
+				<div>
+					<?php
+						$a = new Area("Event Photo 3");
+						$a->display();
+			    	?>
+				</div>
+			</div>
 			<div class="link-wrapper">
 				<a href="/events">See more events...</a>
 			</div>
@@ -92,10 +108,13 @@
 	</section>
 
 	<section class="social">
+		<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
 		<div class="container">
 			<div>
-				<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falbanynypoliceandfirefoundation%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="310" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+			<div>
+				<div class="commonninja_component" comp-type="feed" comp-id="2f995698-cf3c-4a59-bd31-9ea7467c4a98"></div>
 			</div>
 			<div>
 				<?php
