@@ -10,7 +10,7 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
   <header>
     <div class="topbar">
       <div>
-        <a href="/contact">CONTACT APFF TODAY!</a> 
+        <a href="mailto:albanypoliceandfirefoundation@gmail.com">CONTACT APFF TODAY!</a> 
       </div>
       <div>
         <a href="/contact"><i class="fa fa-envelope"></i></a>

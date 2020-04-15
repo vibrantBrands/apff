@@ -1423,6 +1423,15 @@ header {
 
 .home_wrapper .upcoming-events {
   padding: 20px 30px; }
+  .home_wrapper .upcoming-events .event-photos {
+    display: flex;
+    justify-content: space-between; }
+    .home_wrapper .upcoming-events .event-photos > div {
+      margin-right: 10px;
+      width: 25%; }
+      .home_wrapper .upcoming-events .event-photos > div img {
+        height: auto;
+        width: 100%; }
   .home_wrapper .upcoming-events .link-wrapper {
     margin-top: 40px; }
   .home_wrapper .upcoming-events .fa-calendar-alt {

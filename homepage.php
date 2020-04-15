@@ -100,9 +100,15 @@
 						$a->display();
 			    	?>
 				</div>
+				<div>
+					<?php
+						$a = new Area("Event Photo 4");
+						$a->display();
+			    	?>
+				</div>
 			</div>
 			<div class="link-wrapper">
-				<a href="/events">See more events...</a>
+				<a href="/events">See more event photos...</a>
 			</div>
 		</div>
 	</section>

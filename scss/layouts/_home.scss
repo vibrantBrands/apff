@@ -148,8 +148,18 @@
 		padding: $homepage-section-padding;
 
 		.event-photos {
-			display flex;
+			display: flex;
 			justify-content: space-between;
+
+			>div {
+				margin-right: 10px;
+				width: 25%;
+
+				img {
+					height: auto;
+					width: 100%;
+				}
+			}
 		}
 
 		.link-wrapper {
