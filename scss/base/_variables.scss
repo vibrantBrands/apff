@@ -6,16 +6,13 @@ $font-stack-system: 'Open Sans', sans-serif;
 // Font sizes
 $h2-font-size: 40px;
 $h2-line-height: 40px;
-$text-line-height: 30px;
-$event-text-line-height: 25px;
 
 // Colors
 $black: black;
 $white: white;
 $brandPrimary: #5890b0; // Light Blue
-$btnHover: darken($brandPrimary, 10%);
-$textColor: #666666;
-$sponsorBg: #eeeeee;
+$textColor: #a6a6a6;
+$sponsorBg: #f2f2f2;
 
 // Breakpoints
 $sm-breakpoint: 576px;

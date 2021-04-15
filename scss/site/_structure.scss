@@ -15,7 +15,7 @@
     }
 
     &:hover {
-        background: $btnHover;
+        background: $black;
         color: $white;
     }
 
@@ -37,6 +37,7 @@
 }
 
 .apff {
+	text-align: center;
 
     @media only screen and (max-width: $md-breakpoint) {
         overflow-x: hidden;
@@ -60,7 +61,7 @@
     .container {
     	margin: 0 auto;
     	max-width: $content-max-width;
-        padding: 20px 5% 50px;
+        padding: 5%;
     }
 
     .page-content {
@@ -83,7 +84,7 @@
 
         p {
             color: $textColor;
-            line-height: $text-line-height;
+            line-height: 30px;
             margin-top: 20px;
         }
 
@@ -91,24 +92,10 @@
             text-decoration: none;
         }
 
-        ul {
-            color: $textColor;
-            line-height: 25px;
-            padding-left: 30px;
-            list-style-type: disc;
-        }
-
         .container {
             max-width: $content-max-width;
             margin: 0 auto;
             text-align: left;
-
-            .list-wrapper {
-                
-                .list {
-                    display: flex;
-                }
-            }
         }
 
         .btn {
@@ -117,7 +104,7 @@
     }
 
     .hero {
-        background: url('../img/APFF_hero-img.png') no-repeat;
+        background: url('../img/header-image.png') no-repeat;
         background-size: cover;
         background-position: center -160px;
         color: $white;
@@ -137,15 +124,13 @@
         }
 
         .hero-text {
-
             p {
                 color: $white;
-                font-size: 2.8em;
-                line-height: 1.2em;
-                text-shadow: 2px 2px 4px #000000;
+                font-size: 3.3em;
+                line-height: 1em;
                 margin: 0;
 
-                @media only screen and (max-width: $lg-breakpoint) {
+                 @media only screen and (max-width: $md-breakpoint) {
                     font-size: 2em;
                 }
 
@@ -174,12 +159,8 @@
 
             @include flex-col-layout();
 
-            @media only screen and (max-width: $lg-breakpoint) {
-                background: $black;
-            } 
-
             >div {
-               @media only screen and (max-width: $lg-breakpoint) {
+               @media only screen and (max-width: $md-breakpoint) {
                     margin-top: 20px;
                 } 
             }

@@ -5,7 +5,7 @@
 		}
 
 	.sponsors {
-		//background: $sponsorBg;
+		background: $sponsorBg;
 		color: $textColor;
 		padding: 30px 0;
 
@@ -27,63 +27,31 @@
 		}
 
 		.title {
-			background: white;
+			background: $sponsorBg;
 			display: inline-block;
 			font-weight: 600;
-			margin-bottom: 40px;
 			padding: 0 10px;
 			position: relative;
 			z-index: 2;
 
 		}
 
-	.logos {
+		.logos {
+			display: flex;
 
-        .slick-list {
+			p {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 20px;
 
-            .slick-track {
-                display: flex;
-                align-items: center;
+				@include flex-col-layout;
 
-                >div {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
-
-        .slick-prev {
-        	color: $sponsorBg;
-
-            &:before {
-                content: "";
-                display: block;
-                border: solid gray;
-                border-width: 0 3px 3px 0;
-                display: inline-block;
-                padding: 3px;
-                transform: rotate(135deg);
-            }
-        }
-
-        .slick-next {
-        	color: $sponsorBg;
-        	
-        	@media only screen and (min-width: $lg-breakpoint) {
-			    right: -50px;
+				picture {
+					margin: 15px;
+				}
 			}
-
-            &:before {
-                content: "";
-                display: block;
-                border: solid gray;
-                border-width: 0 3px 3px 0;
-                display: inline-block;
-                padding: 3px;
-                transform: rotate(-45deg);
-            }
-        }
-    }
+		}
 	}
 
 	.mission-statement,
@@ -104,24 +72,9 @@
 	}
 
 	.board-of-directors {
-		background: url('../img/directors-bg.jpg');
+		background: url('../img/directors-bg.png');
 		outline: 5px solid $brandPrimary;
   		outline-offset: 5px;
-
-  		a {
-  			color: $white;
-  			text-decoration: none;
-
-  			&:hover {
-  				text-decoration: underline;
-  			}
-  		}
-
-  		p {
-  			color: $white;
-  			font-size: 1.2em;
-  			margin: 3px auto;
-  		}
 
   		h2 {
   			color: $white;
@@ -131,8 +84,6 @@
   		ul {
   			color: $white;
   			column-count: 3;
-  			list-style-type: none;
-  			padding-left: 0;
 
   			@media only screen and (max-width: $md-breakpoint) {
 			    column-count: 1;
@@ -147,79 +98,68 @@
 	.upcoming-events {
 		padding: $homepage-section-padding;
 
-		.event-photos {
-			display: flex;
-			justify-content: space-between;
-
-			>div {
-				margin-right: 10px;
-				width: 25%;
-
-				img {
-					height: auto;
-					width: 100%;
-				}
-			}
-		}
-
-		.link-wrapper {
-		 	margin-top: 40px;
-		 }
-
 		.fa-calendar-alt {
 			margin-right: 10px;
 		}
 
-		.list-wrapper {
-			line-height: $event-text-line-height;
+		.link-wrapper {
+			color: $brandPrimary;
+			display: block;
+			margin: 30px auto;
+			text-align: center;
 
-		 .list {
-		 	display: flex;
-		 	//flex-wrap: wrap;
-		 	justify-content: space-between;
-
-		 	@include flex-col-layout();
-
-		 	.entry {
-		 		display: flex;
-		 		justify-content: space-between;
-		 		margin-top: 30px;
-
-		 		.ccm-block-page-list-page-entry-thumbnail {
-		 			margin-right: 20px;
-		 		}
-
-		 		.ccm-block-page-list-page-entry-text {
-		 			padding: 0 20px;
-		 		}
-		 	}
-		 }
+			a {
+				display: inline-block;
+				margin: 0 auto;
+			}
 		}
 
+		.ccm-block-page-list-wrapper {
+
+			.ccm-block-page-list-pages {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+
+				@include flex-col-layout();
+
+				.ccm-block-page-list-page-entry-horizontal {
+					margin-top: 30px;
+					padding: 0 30px;
+					width: 45%;
+
+					@media only screen and (max-width: $lg-breakpoint) {
+			            width: 100%;
+			        }
+				}
+
+				.ccm-block-page-list-page-entry-text {
+					padding-top: 10px;
+				}
+
+				.ccm-block-page-list-title {
+
+					a {
+						color: $black;
+						text-transform: uppercase;
+					}
+				}
+
+				.ccm-block-page-list-description {
+					color: $textColor;
+					line-height: 20px;
+					margin-top: 10px;
+				}
+			}
+		}
 	}
 
 	.social {
 		background: #f2f1f1;
 		padding: $homepage-section-padding;
 
-		.container {
-			@include flex-col-layout();
-
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
-
-			img {
-				width: 400px;
-			}
-		}
-
 		@media only screen and (max-width: $md-breakpoint) {
 			padding: 40px 0px;
-		}
-
-		h2 {
-			text-align: left;
 		}
 
 		a {

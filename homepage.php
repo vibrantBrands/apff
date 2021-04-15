@@ -114,7 +114,9 @@
 	</section>
 
 	<section class="social">
-		<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
+		<div class="container">
+			<h2><i class="fa fa-comments"></i>LET'S GET SOCIAL</h2>
+		</div>
 		<div class="container">
 			<div>
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falbanynypoliceandfirefoundation%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="310" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
